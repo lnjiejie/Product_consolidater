@@ -16,6 +16,7 @@ This is a small app written in javascript with node.js and npm packages. This ap
 1. Need to install latest node js either from command line or [nodejs.org](https://nodejs.org/en/download/) website
 2. Run `npm install` in the root (after successfully installation, there should be node_modules folder created with installed npm packages)
 3. Run `npm run start` to run the app. Successful run should promp output in the console and also generate a new `result.csv` in `output`
+4. Run `npm test` to see the unit testing result from Jest.
 
 
 ## Business requirement

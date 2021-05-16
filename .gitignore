@@ -2,3 +2,4 @@ node_modules
 .git/
 .vscode/
 node_modules/
+docco.csv
