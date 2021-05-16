@@ -1,0 +1,32 @@
+{
+  "name": "product_consolidate",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "### The below describes a problem statement, make sure to read all the instructions in this readme before you start.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll --reporters=default --coverageReporters=text",
+    "test:ci": "jest --ci --reporters=jest-junit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosumitagrawal/codingskills.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tosumitagrawal/codingskills/issues"
+  },
+  "homepage": "https://github.com/tosumitagrawal/codingskills#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csvtojson": "^2.0.10",
+    "fs": "0.0.1-security",
+    "json-2-csv": "^3.11.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "webpack": "^5.37.0"
+  }
+}
