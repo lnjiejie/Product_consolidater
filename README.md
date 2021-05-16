@@ -9,17 +9,17 @@ This is a small app written in javascript with node.js and npm packages. This ap
 1. `input/` - All the csv files that contains information of products in both companies.
 2. `output/' - Contains the output result (csv) after running the app.
 3. `src/` - All the js written for running the app.
-4. `src/services` - Code for reading product data from the csv files
-5. `src/utils` - Utils to use
+4. `src/services` - Code for reading product data from the csv files.
+5. `src/utils` - Utils to use.
 
 ## 3. Environment set up and how to run
-1. Need to install latest node js either from command line or [nodejs.org](https://nodejs.org/en/download/) website
-2. Run `npm install` in the root (after successfully installation, there should be node_modules folder created with installed npm packages)
-3. Run `npm run start` to run the app. Successful run should promp output in the console and also generate a new `result.csv` in `output`
+1. Need to install latest node js either from command line or [nodejs.org](https://nodejs.org/en/download/) website.
+2. Run `npm install` in the root (after successfully installation, there should be node_modules folder created with installed npm packages).
+3. Run `npm run start` to run the app. Successful run should promp output in the console and also generate a new `result.csv` in `output`.
 4. Run `npm test` to see the unit testing result from Jest.
 
 
-## Business requirement
+## 4. Business requirement
 - Company A and B could have conflicting product codes (`SKUs`).
 - Product codes might be same, but they are different products.
 - Product codes are different, but they are same product.
@@ -27,7 +27,7 @@ This is a small app written in javascript with node.js and npm packages. This ap
 - Product on merged catalog must have information about the company it belongs to originally.
 
 
-## Assumption
+## 5. Assumption
 1. Products with different `SKU` but same `barcode` are considered as same products.
 2. The data of the csv files has no defects (missing or invalid value).
 3. Same products that both company have will be considered to be sourced from company A in the merged catalog.

@@ -81,24 +81,4 @@ describe("Test Utils", () => {
 		expect(undefinedArray).toEqual(undefined);
 		expect(invalidKey).toEqual(testArray);
 	});
-
-	test("writeJsonToCsv", () => {
-		const testArray = [
-			{
-				name: "jeff",
-				age: 23,
-			},
-			{
-				name: "Gino",
-				age: 21,
-			},
-			{
-				name: "Gino",
-				age: 24,
-			},
-		];
-		const validArray = writeJsonToCsv(testArray, "docco.csv");
-
-		expect(validArray).toEqual(undefined);
-	});
 });
