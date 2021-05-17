@@ -1,8 +1,4 @@
-import {
-	writeJsonToCsv,
-	distinctWithKey,
-	sortArrayOfObjByStrings,
-} from "./Utils.js";
+import { distinctWithKey, sortArrayOfObjByStrings } from "./Utils.js";
 
 describe("Test Utils", () => {
 	test("distinctWithKey", () => {
