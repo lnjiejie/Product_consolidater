@@ -7,15 +7,21 @@ export default class ConsolidatingServices {
 	 */
 	static getMergedBarcode(barcodesA, barcodesB) {
 		let mergedBarcode = [...barcodesA];
-		barcodesB.forEach((element) => {
-			if (
-				!barcodesA.some((barcode) => {
-					return barcode.Barcode === element.Barcode;
-				})
-			) {
-				mergedBarcode.push(element);
+
+		if (barcodesB !== null && barcodesB !== undefined) {
+			if (Object.keys(barcodesB[0]).some((key) => key === "Barcode")) {
+				barcodesB.forEach((element) => {
+					if (
+						!barcodesA.some((barcode) => {
+							return barcode.Barcode === element.Barcode;
+						})
+					) {
+						mergedBarcode.push(element);
+					}
+				});
 			}
-		});
+		}
+
 		return mergedBarcode;
 	}
 
@@ -28,6 +34,7 @@ export default class ConsolidatingServices {
 	 */
 	static getMergedSKUWithSource(catalogData, company, mergedSKUs) {
 		const mergedData = [];
+
 		catalogData.forEach((element) => {
 			if (
 				mergedSKUs.find((product) => {

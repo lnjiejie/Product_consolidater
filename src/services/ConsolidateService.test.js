@@ -35,6 +35,10 @@ describe("Test ConsolidateServices", () => {
 			testArrayA,
 			testArrayB
 		);
+		const emptyBarcodeB = ConsolidateServices.getMergedBarcode(
+			testArrayA,
+			null
+		);
 
 		expect(validDataSets).toEqual([
 			{
@@ -54,6 +58,7 @@ describe("Test ConsolidateServices", () => {
 				Barcode: 21121,
 			},
 		]);
+		expect(emptyBarcodeB).toEqual(testArrayA);
 	});
 
 	test("getMergedSKUWithSource", () => {
