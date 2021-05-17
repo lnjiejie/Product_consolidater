@@ -1,5 +1,4 @@
 import csvToJson from "csvtojson";
-
 export default class BarcodeServices {
 	static async getBarcodes(companyName) {
 		let barcodes = "";

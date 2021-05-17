@@ -1,7 +1,7 @@
 /**
  * Function that distinct elements of an array of primitive key passed
  * @param {array} array - Array of object to filter
- *  * @param {string} key - Key of the object in the array as the primitive key to process the array
+ * @param {string} key - Key of the object in the array as the primitive key to process the array
  * @returns {array} - Array with the distinct elements with unique value of the selected primitive key
  */
 const distinctWithKey = (array, key) => {
@@ -28,7 +28,7 @@ const distinctWithKey = (array, key) => {
 /**
  * Sort an array of object by the value of the object's properties with string value
  * @param {array} array - Array of object to sort
- *  * @param {string} key - name of the object's properties
+ * @param {string} key - name of the object's properties
  * @returns {array} - The sorted array
  */
 const sortArrayOfObjByStrings = (array, key) => {

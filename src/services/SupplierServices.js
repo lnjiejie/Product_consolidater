@@ -1,5 +1,4 @@
 import csvToJson from "csvtojson";
-
 export default class SupplierServices {
 	static async getSupplier(companyName) {
 		let supplier = "";

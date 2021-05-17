@@ -1,5 +1,4 @@
 import csvToJson from "csvtojson";
-
 export default class CatalogServices {
 	static async getCatalog(companyName) {
 		let catalog = "";
